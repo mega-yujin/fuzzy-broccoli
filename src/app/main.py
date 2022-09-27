@@ -10,7 +10,7 @@ def index():
     return 'Hello'
 
 
-@app.route("add")
+@app.route("/add")
 def add():
     """Add endpoint"""
     return str(
