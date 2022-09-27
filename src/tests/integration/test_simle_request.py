@@ -5,4 +5,4 @@ def test_simple_request_home(client):
 
 def test_add_pos(client):
     resp = client.get('/add?a=1&b=9')
-    assert resp == '10'
+    assert resp.text == '10'
