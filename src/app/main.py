@@ -1,3 +1,4 @@
+"""Simole flask app"""
 from flask import Flask
 
 app = Flask(__name__)
@@ -5,6 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+    """Index endpoint"""
     return 'Hello'
 
 
